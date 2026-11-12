@@ -1,0 +1,10 @@
+{
+  "name": "vulkan-renderer",
+  "version": "0.0.1",
+  "dependencies": [
+    "gtest",
+    "fmt",
+    "vulkan",
+    "glfw3"
+  ]
+}

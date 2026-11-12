@@ -1,0 +1,13 @@
+## Vim
+*.swp
+*.swo
+*.swn
+*~
+~*
+
+## Vcpkg
+vendor/
+
+## Cmake
+build/
+
