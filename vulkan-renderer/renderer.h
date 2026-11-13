@@ -43,15 +43,10 @@ public:
   Renderer(VR::Window& window);
   ~Renderer();
 
-// === Getters/Setters
-public:
-
-// === Operations
-public:
-
 // === Initializers
 private:
   void initVulkan();
+  bool createInstance();
 
 // === Destroyers
 private:
