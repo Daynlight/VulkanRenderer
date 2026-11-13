@@ -58,7 +58,6 @@ void VR::Window::swapFrame() {
     return;
   };
 
-  glfwSwapBuffers(window);
   glfwPollEvents();
   is_running = !glfwWindowShouldClose(window);
   glfwGetWindowSize(window, &window_size[0], &window_size[1]);
@@ -72,6 +71,9 @@ void VR::Window::initWindow() {
   
   glfwInit(); 
   
+  glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API); 
+  glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
   window = glfwCreateWindow(640, 480, title.c_str(), NULL, NULL);
   if(!window) {
     if(DEBUG_LOGS) fmt::println(fg(fmt::color::red), "[VR::Window::initWindow] Failed to create Window");

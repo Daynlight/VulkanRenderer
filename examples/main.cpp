@@ -6,11 +6,13 @@
 
 
 #include <vulkan-renderer/window.h>
+#include <vulkan-renderer/renderer.h>
 
 
 
 int main() {
   VR::Window window("Vulkan Window");
+  VR::Renderer renderer(window);
 
   while(window.isRunning()) {
     window.swapFrame();

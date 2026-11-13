@@ -5,6 +5,8 @@
 
 
 
+#pragma once
+#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
 #include <fmt/base.h>
@@ -38,11 +40,13 @@ public:
   ~Window();
 
 // === Getters/Setters
+public:
   bool isRunning() const;
   std::string getTitle() const;
   void setTitle(const std::string& title);
 
 // === Operations
+public:
   void swapFrame(); 
 
 // === Initializers

@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.15)
 
 ############## [Set Global Properties] #############
 set(ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE PATH "Root directory of the project")
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(VULKAN_RENDERER_BUILD_EXAMPLE "Build example" ON)
 option(VULKAN_RENDERER_BUILD_TESTS "Build tests" ON)

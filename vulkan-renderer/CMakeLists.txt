@@ -19,6 +19,7 @@ project(vulkan-renderer LANGUAGES CXX)
 
 set(src
   window.cpp
+  renderer.cpp
 )
 
 add_library(vulkan-renderer STATIC ${src})
